@@ -1,4 +1,4 @@
-**# comma.ai Design Challenge — Weather HUD Concept
+# comma.ai Design Challenge — Weather HUD Concept
 
 openpilot is a Level 2 self-driving system that continuously evaluates its own confidence and understands when it is approaching its physical limits. Yet, it communicates neither of these states to the driver until something goes wrong. The driver is only notified when the system beeps, alerts, or disengages—often at the worst possible moment.
 
