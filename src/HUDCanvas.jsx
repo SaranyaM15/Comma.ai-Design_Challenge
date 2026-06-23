@@ -18,8 +18,8 @@ export default function HUDCanvas({ confidence, steeringLoad }) {
       img.src = src;
     });
     Promise.all([
-      load('clear', '/src/assets/road_clear.png'),
-      load('intersection', '/src/assets/road_intersection.png'),
+      load('clear', roadClear),
+      load('intersection', roadIntersection),
     ]).then(() => { stateRef.current.images = imgs; });
   }, []);
 
