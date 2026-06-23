@@ -1,0 +1,50 @@
+.app { min-height: 100vh; display: flex; flex-direction: column; background: hwb(0 8% 92%); color: #111; }
+
+.header { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; border-bottom: 0.5px solid #e0e0e0; background: #ffffff; }
+.header-left { display: flex; align-items: baseline; gap: 10px; }
+.comma-mark { font-size: 18px; font-weight: 700; letter-spacing: -0.5px; color: #111; }
+.header-title { font-size: 13px; color: #888; letter-spacing: 1px; }
+.header-tag { font-size: 11px; color: #1a7aff; border: 0.5px solid #b0ccff; padding: 3px 10px; border-radius: 20px; letter-spacing: 1px; }
+
+.main { flex: 1; display: flex; flex-direction: column; align-items: center; padding: 32px 20px 48px; gap: 32px; max-width: 780px; width: 100%; margin: 0 auto; }
+
+.device-wrap { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.device-frame { width: 100%; background: #000; border-radius: 10px; padding: 6px; border: 1.5px solid #ddd; }
+.screen { border-radius: 6px; overflow: hidden; aspect-ratio: 21/10; width: 100%; }
+.device-label { font-size: 11px; color: #aaa; letter-spacing: 1px; }
+
+.controls { width: 100%; display: flex; flex-direction: column; gap: 24px; }
+.control-block { display: flex; flex-direction: column; gap: 10px; }
+.control-label { font-size: 10px; color: #999; letter-spacing: 2px; text-transform: uppercase; }
+
+.scenario-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+@media (min-width: 500px) { .scenario-grid { grid-template-columns: repeat(4, 1fr); } }
+
+.scenario-btn { padding: 10px 8px; border: 0.5px solid #ddd; border-radius: 8px; background: #fff; color: #333; font-size: 12px; transition: all 0.15s; text-align: center; }
+.scenario-btn:hover { background: #f5f5f5; color: #111; border-color: #bbb; }
+.scenario-btn.active { border-color: #999; color: #000; background: #f0f0f0; font-weight: 600; }
+.scenario-desc { font-size: 12px; color: #888; padding-left: 2px; }
+
+.sliders-row { display: grid; grid-template-columns: 1fr; gap: 20px; }
+@media (min-width: 560px) { .sliders-row { grid-template-columns: 1fr 1fr; } }
+
+.slider-block { display: flex; flex-direction: column; gap: 8px; }
+.slider-header { display: flex; justify-content: space-between; align-items: baseline; }
+.slider-val { font-size: 12px; font-weight: 500; transition: color 0.4s; }
+.slider { width: 100%; accent-color: #1a7aff; cursor: pointer; }
+.slider-track-labels { display: flex; justify-content: space-between; font-size: 10px; color: #bbb; letter-spacing: 0.5px; }
+
+.legend { display: flex; gap: 20px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 7px; font-size: 11px; color: #888; }
+.legend-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+.explainer { width: 100%; }
+.explainer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (min-width: 560px) { .explainer-grid { grid-template-columns: repeat(4, 1fr); } }
+
+.explainer-card { background: #f9f9f9; border: 0.5px solid #e8e8e8; border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+.card-num { font-size: 10px; color: #ccc; letter-spacing: 2px; }
+.explainer-card h3 { font-size: 13px; font-weight: 500; color: #222; line-height: 1.3; }
+.explainer-card p { font-size: 12px; color: #888; line-height: 1.6; }
+
+.footer { padding: 16px 24px; border-top: 0.5px solid #0c0c0c; font-size: 11px; color: #bbb; text-align: center; letter-spacing: 0.5px; background: #ffffff; }
